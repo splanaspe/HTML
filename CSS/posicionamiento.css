@@ -1,0 +1,49 @@
+div{
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.static{
+    
+}
+
+/* Se posiciona en relacion al posicionamiento original*/
+.relative{
+    position:relative;
+    left: 80px;
+}
+
+/* Posicionamiento fijo, en relacion a la pantalla*/
+.fixed{
+    position: fixed;
+    /*Le decimos que esté siempre debajo 
+    de la pantalla a la izquierda */
+    bottom: 0px;
+    left:0px;
+    background-color: aqua;
+    z-index:2;
+}
+
+.absolute{
+    /*Estará siempre arriba, ningún elemento estará por debajo de él */
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background-color: bisque;
+}
+
+.relative.contenedor{
+    width: 300px;
+    height: 500px;
+    background-color: lightpink;
+}
+
+/* Es como un fixed y relativo a la vez*/
+.sticky{
+    background-color: lightyellow;
+    position: sticky;
+    top:0px;
+    z-index:2;
+}
