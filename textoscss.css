@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+/* Importamos una fuente de fonts.google.com */
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 400; /* Esto determina la grosor de las letras */
+}
+
+

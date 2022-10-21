@@ -1,0 +1,60 @@
+h1{
+   color:deeppink ; 
+   font-size: 100pt;
+
+}
+
+
+/* Esto es un comentario*/
+p{
+    color: blue;
+    font-size: 50pt;
+}
+
+.encabezado {
+    text-transform: uppercase; 
+}
+
+
+/* Accedemos a través del selector id */
+#primera-noticia{
+    color: green;
+    font-size: 30pt;
+}
+
+#segunda-noticia{
+    color: black;
+    font-size: 24pt;
+}
+
+
+/* Ponemos estas cualidades a todos los elementos de la clase warning*/ 
+*.warning{
+
+    /* Todos los elementos serán marrón a no ser que indiquemos otro color*/
+    color:rgb(211, 35, 35); 
+
+}
+
+/* Selector Universal para todos los elementos */ 
+* {
+    font-size: 25pt;
+}
+
+
+/* Manera lenta de hacerlo */
+.autor{
+    text-decoration: underline;
+}
+.oficio{
+    text-decoration: underline;
+}
+.aficiones{
+    text-decoration: underline;
+    
+}
+
+/* Esta es la manera comprimida */
+.autor, .oficio, .aficiones, h1, #segunda-noticia{
+    text-decoration: underline;
+}
