@@ -1,0 +1,99 @@
+/* PLAYGROUND https://codepen.io/enxaneta/full/adLPwv/ */
+
+
+.flex{
+    display:flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content: center;
+    margin: 5pt;
+    /*Esta propiedad hará que los elementos de dentro,
+    si no tienen height, que se ajusten a la altura del
+    contenedor flex */
+    align-items: stretch;
+}
+
+.flex-2{
+    display:flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-between;
+    margin:5pt;
+
+    flex-wrap: wrap; /*Esta propiedad no quita la
+    dimension de los div al reducir el tamaño
+    de la ventana, se va redimensionando y adaptando*/
+}
+
+.flex-3{
+    display:flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around;
+    /* center hará que los tres divs estén centrador 
+    por igual dentro del div contenedor flex*/
+    align-items: center;
+    margin:5pt;
+
+    flex-wrap: wrap; /*Esta propiedad no quita la
+    dimension de los div al reducir el tamaño
+    de la ventana, se va redimensionando y adaptando*/
+}
+
+.flex-4{
+    display:flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around;
+    
+    /*CAMBIAMOS El eje principal, indicamos que el 
+    vertical sea el princiapl */
+    flex-direction: column;
+    align-items: flex-start;
+    margin:5pt;
+    
+    flex-wrap: wrap; /*Esta propiedad no quita la
+    dimension de los div al reducir el tamaño
+    de la ventana, se va redimensionando y adaptando*/
+}
+
+.contenido-1{
+    background-color: aliceblue;
+    /*height: 200px;*/
+    width:100px;
+    border:1px solid blue;
+}
+
+.contenido-2{
+    background-color: aliceblue;
+    /*height: 200px;*/
+    width:100px;
+    border:1px solid blue;
+}
+
+.contenido-3{
+    background-color: aliceblue;
+    /*height: 200px;*/
+    width:100px;
+    border:1px solid blue;
+}
+
+
+/* Contenidos 2*/
+.contenido-1-2{
+    background-color: aliceblue;
+    width:100px;
+    border:1px solid blue;
+}
+
+.contenido-2-2{
+    background-color: aliceblue;
+    width:100px;
+    border:1px solid blue;
+}
+
+.contenido-3-2{
+    background-color: aliceblue;
+    width:100px;
+    border:1px solid blue;
+}
