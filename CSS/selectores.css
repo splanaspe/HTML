@@ -1,0 +1,17 @@
+
+/*Con esta sintaxis, estamos definiendo los "p" dentro de la 
+clase contenedor, la que está dentro de la section class main 
+= section.main , que a la vez está dentro del body*/
+
+body section.main .contenedor p{
+    color:green;
+} /* Anidacion de selectores */
+
+
+/*Con esta sintaxis, estamos definiendo el estilo  del boton con un id 
+definido */
+.contenedor #boton-contenedor{
+    background-color: aqua;
+}
+
+

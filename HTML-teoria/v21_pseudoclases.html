@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <style>
+        /*https://www.w3schools.com/css/css_pseudo_classes.asp */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .hover{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        .hover:hover{ 
+            /*pseudoclase que modificara las propiedades
+            cuando el cursor esté por encima */
+            background-color: aqua;
+            width: 400px;
+        }
+
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;
+            width: 100px;
+            height: 50px;
+        }
+
+        .listado p:first-child{
+            /* pseudoclase que afecta al primer p dentro de la
+            clase p*/
+            color:white;
+        }
+
+        a:link{
+            color: hotpink;
+        }
+        a:visited{
+            color:brown;
+        }
+        a:hover{
+            color:deepskyblue;
+        }
+
+        a:active{
+            /*Cuando se haga clic */
+            color: greenyellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="hover">
+        <p> 
+            Eiusmod laborum dolore ad voluptate 
+            do enim exercitation cillum aliqua 
+        </p>
+    </div>
+    <div class="listado">
+        <p> Párrafo 1 </p>
+        <p> Párrafo 2 </p>
+        <p> Párrafo 3 </p>
+    </div>
+    <div class="enlaces">
+        <a href="http://google.com" target="_blank"> Enlace a google</a>
+        <a href="http://marca.com" target="_blank"> Enlace a marca</a>
+    </div>
+</body>
+</html>
