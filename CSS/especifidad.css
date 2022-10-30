@@ -1,0 +1,22 @@
+/* TIENE PREFERENCIA ANTE TODO*/
+#h1-id{
+    color: darksalmon;
+}
+
+
+.h1-clase{
+    color: blue;
+}
+
+/*Al estar opor debajo, se lee primero. CSS lee de abajo a arriba */
+h1{
+    /* Este estilo es el que menos especifidad tiene, pero 
+    si le aádimos la etiqueta  " !important", pasará a ser
+    el que tiene la especidifad más alta */
+    color:green !important;
+    /*Mejor no usar el important */
+}
+
+p{
+    color:red;
+}

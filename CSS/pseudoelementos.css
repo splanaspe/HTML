@@ -45,3 +45,11 @@ span.frase::after{
     /*cambiara el color de  */
     color: red; 
 }
+
+
+/*Aplicamos a todos los div el color azul, pero no 
+se aplican a todos, dado que el color definido para
+cada clase es predominante */
+div{
+    background-color: blue;
+}
