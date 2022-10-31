@@ -1,0 +1,63 @@
+
+
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+    transition: all 1s linear; 
+
+    /*animation: traslacion 10s; */
+    /*aplica 1s a todos los cambios */
+    /*linear es para que se mueva de forma uniforme */
+    
+}
+
+
+/*Cuando estemos encima del padre, definimos comportamiento del hijo */
+.padre:hover .hijo{
+    /* transform: translatex(100%) translateY(100%); 
+    background-color: blueviolet; */
+    animation: traslacion 5s;
+}
+
+@keyframes traslacion {
+    0%{
+        background-color: beige;
+        transform: translatey(0%);
+        transform: translatex(0%);
+    }
+
+    20%{
+        background-color: rgb(12, 221, 23);
+        transform: translatey(50%) translatex(50%);
+    
+    }
+
+    40%{
+        background-color: rgb(42, 255, 237);
+        transform: translatey(0%) translatex(50%);
+    }
+
+    60%{
+        background-color: rgb(42, 255, 237);
+        transform: translatey(50%) translatex(50%) ;
+    }
+
+
+    80%{
+        background-color: rgb(204, 38, 255);
+        transform: translatex(100%) translatey(0%);
+    }
+
+    100%{
+        background-color: beige;
+        transform: translatey(0%);
+    }
+
+}
