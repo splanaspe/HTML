@@ -1,0 +1,15 @@
+
+
+.btn-modern{
+    border: none;
+    border-bottom: solid 2px aqua;
+    background-color: aqua;
+    transition: all 0.4s; 
+}
+
+.btn-modern:hover {
+    transform: translateX(-5px);
+    background-color: aquamarine;
+    border-bottom-color:  rgb(137, 245, 209);
+    color: pink;
+}

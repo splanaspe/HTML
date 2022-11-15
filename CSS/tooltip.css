@@ -4,8 +4,49 @@ body{
     align-items: center; 
     margin: 0;
     padding: 0; 
+    min-height: 100vh;
 }
 
 .btn-tooltip {
+    position: relative; 
     padding: 5px 10px;
+    border-radius: 5px;
+    border:none; 
+    background-color: green;
+    color: white;
+    border-bottom: 2px solid darkgreen;
+    transition: background-color 150ms;
+}
+
+.btn-tooltip:hover{
+    background-color: rgb(2, 99, 2);
+}
+
+
+.tooltip{
+    position: absolute;
+    opacity: 0;
+    top: -100px;
+    color: #ddd;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: visibility 150ms;
+    /* Ajustamos */
+    top: -150px;
+    left: -20px;
+}
+
+.btn-tooltip:hover .tooltip{
+    opacity: 1;
+}
+
+.tooltip::before {
+    content: '';
+    border: solid 10px transparent;
+    border-top-color: #333;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
 }
