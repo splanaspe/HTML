@@ -1,0 +1,50 @@
+h1 {
+    color: red;
+    font-size: 4rem;
+}
+
+p {
+    color:black;
+    font-size: 2rem;
+}
+
+
+
+/*
+
+@media all (max-width: 576px) 
+
+@media screen (max-width: 576px) 
+
+s'aplicarà el estil indicat sempre que la pantalla sigui menor a 576  px*/
+
+/* DISEÑO MOBILE FIRST*/
+@media (min-width: 576px){
+    h1 { 
+        color: green;
+    }
+}
+
+@media (min-width: 995px){
+    h1{
+        color: blue;
+    }
+}
+
+
+@media (min-height: 300px){
+    p {
+        color:cyan;
+    }
+}
+
+
+/* 
+LANDSCAPE es cuando la altura es mayor a la amplada,
+equivalente a un movil en horizontal
+*/
+@media (orientation: landscape) and (min-height: 400px) {
+    p{
+        color: brown;
+    }
+}

@@ -1,0 +1,77 @@
+
+/*
+TEORIA
+
+
+Display flex hace que los elementos ocupen el minimo espacio posible
+
+
+flex-direction: row es el posicionamiento en el eje vertical
+
+flex-direction: column ho organitza al revés, eix horitzontal
+
+*/
+
+.contenedor {
+    display:flex;
+    background-color: yellow;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    min-height: 5rem;
+
+    /* Eje principal*/
+    justify-content: center; 
+
+    /*VARIACIONES de justify-content
+    
+        justify-content: start;  -> lo pone al principio
+
+        justify-content: end; -> lo pone al final
+
+        justify-content: between; -> El espacio sobrante lo pone entre los elementos. El primer elemento al principio
+
+        justify-content: space-around; -> El espacio sobrante lo pone por igual entre elementos, pero la distancia del primer elemento al margen de la pantalla es diferente
+
+        justify-content: space-evenly; -> Igual que el anterior, pero la distancia entre el margen y el primer elemento es igual a la distancia del primer elemento y el segundo
+
+    */
+
+
+    /* Eje secundario */
+    align-items: center; 
+
+    /*  VARIACIONES: align-items 
+
+        align-items: baseline; -> Lo situa pegado arriba del contenedor segun el eje vertical y a la izquierda segun el eje horizontal
+
+        align-items: center; -> Lo situa al medio del eje vertical o horizontal (en funcion de la orientacion), al centro
+
+        align-items: stretch; -> Es el estandard y estira los elementos para que ocupen todo el espacio vertical o horizotnal, desde arriba a bajo (considerando los paddings del contenedor) y la orientacion
+
+        align-items: end; -> Lo mismo que baseline, pero lo situa al final (debajo o a la derecha, en funcion de la orientacion)
+
+
+
+
+    */
+
+
+    /*flex-wrap: nowrap;  -> Es la estandard*/
+
+    flex-wrap: wrap; /* -> Los elementos se pondran uno debajo de otro, cambiara la distribucion para que encaje ... Mantiene, en la medida posible, el tamaño de los objetos */        
+
+
+
+   /* flex-direction: column; canvia l'ordre de row (vertical) a (horitzontal) */
+}
+
+.item {
+    background-color: salmon;
+    padding: 0.25rem;
+}
+
+
+
+.item2{
+    align-self: stretch;
+}

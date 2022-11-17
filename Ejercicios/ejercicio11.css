@@ -1,0 +1,44 @@
+
+.contenedor{
+    display: flex;
+    gap: 5px;
+    height: 100vh;
+}
+
+
+.contenedor-izq{
+    display:flex;
+    gap: 5px;
+    flex-direction: column;
+    background-color:aquamarine;
+    width: 10rem;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+    height: 50vh;
+}
+
+
+.contenedor-dch {
+    background-color:blueviolet;
+    padding: 10px; 
+    color: white; 
+    flex-grow: 5;
+    height: 50vh;
+}
+
+.item{
+    background-color: blue;
+    color: white;
+}
+
+@media screen and (max-width: 640px){
+    .contenedor-izq{
+        flex-direction: row;
+        bottom: 0;
+    }
+
+    .contenedor{
+        display: flex;
+    }
+}

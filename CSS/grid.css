@@ -1,0 +1,41 @@
+
+
+.contenedor{
+    display: grid; 
+
+    gap: 0.5rem;
+    column-gap: 0.1rem; 
+    row-gap: 1rem;
+
+
+    /*grid-template-columns: auto auto auto; ->   Estamos diciendo que tengan tres columnas de tamaño automatico */
+
+    /* grid-template-columns: repeat(4,auto); */
+
+    /* grid-template-columns: 20px 3rem 25vw; */
+
+    grid-template-columns: 1fr 1fr 2fr;  /* -> divide en 4 el espacio y asigna 1/4 , 1/4 y 2/4 */
+
+    grid-template-rows: 200px 1fr 1fr;
+
+    grid-template-areas: 'head head head' 'main main aside' 'footer footer footer';
+}
+
+.item{
+    background-color:aquamarine;
+    padding: 0.25rem;
+    font-size: 2rem;
+    border: solid 1px blue;
+    border-radius: 5px;
+}
+
+.item1{
+    /* grid-column: 1/3;  -> ocupará de la rejilla 1 a la 3 */
+    grid-column: 2/span 2; /* -> empieza a la 2a columna y ocupara dos columnas más independente del tamaño y posicion de las mismas */
+}
+
+
+.item9{
+    grid-area: 2 / 1 / 4 / 3;
+    /* grid-area: fila_inicio / columna_inicio / fila_fin /columna_fin */
+}
