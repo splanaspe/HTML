@@ -1,0 +1,55 @@
+
+@use "mixins";
+
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+.container{
+    width: 100%;
+    background-color: azure;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+h1{
+    margin:0;
+    @include mixins.formato-texto(#2646b9);
+}
+
+p {
+    @include mixins.formato-texto();
+}
+
+
+
+/*en CSS, para acceder al li dentro de ul dentro de la clase listado sería así
+
+.listado ul li{ 
+
+}
+
+en SASS no... se incorpora dentro de los claudators
+*/
+
+.listado{
+    width: 10rem;
+    background-color: greenyellow;
+    padding: 0.5rem; 
+
+    ul{
+        margin: 0.5rem;
+
+        li{
+            list-style: none;
+
+            /*accedemos al hover así */
+            &:hover{
+                color: cyan;
+            }
+        }
+    }
+}

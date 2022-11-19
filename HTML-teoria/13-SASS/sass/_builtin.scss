@@ -1,0 +1,117 @@
+
+
+// funciones con STRINGS
+@use "sass:string";
+@use "sass:math";
+@use "sass:list";
+@use "sass:selector";
+@use "sass:color";
+
+
+
+// en la web de SASS, en Documentation, hi ha totes les funcions predefinides
+
+@debug "hola"; //mensaje que dirá a la terminal
+
+@debug string.index("Helvetica Neue", "Neue");
+
+$string: "Helvetica";
+
+$newString: string.insert($string, " Bold", 10);
+
+@debug $newString;
+
+@debug string.length($newString);
+
+$newStringSliced: string.slice($newString, 3, 9);
+
+@debug $newStringSliced;
+
+@debug string.to-upper-case("hola mono");
+
+@debug string.to-lower-case("hola mono");
+
+
+// funciones con numeros
+
+
+
+@debug math.$e; 
+@debug math.$pi;
+
+@debug math.ceil(4.9);
+@debug math.ceil(2.1);
+@debug math.floor(2.1);
+
+@debug math.clamp(0, -2, 10);
+@debug math.clamp(0, 12, 10);
+@debug math.clamp(0, 7, 10);
+@debug math.clamp(0, 45, 47);
+
+@debug math.max(1,2,3,-2,24);
+@debug math.min(1,2,3,-2,24);
+
+@debug math.round(3.4);
+@debug math.round(3.7);
+
+@debug math.abs(-6);
+
+
+//funciones con listas
+
+$lista1: 10px, 10px, 0px, 5px;
+
+@debug $lista1;
+
+@debug list.append($lista1,25px, space);
+
+$border-custom: solid 1px #ccc; 
+// informa de la posicion en la que está un elemento: 1,2,3,4,5...
+@debug list.index($border-custom, 1px);
+
+$listJoined: list.join($lista1,$border-custom, auto);
+@debug $listJoined;
+
+@debug list.length($listJoined);
+
+
+//Estamos cambiando el elemento de la posicion 2 
+@debug list.set-nth($border-custom, 2, 2px);
+
+
+//funciones del selector
+$selector-1: "a";
+$selector-2: " .disabled";
+
+@debug selector.append($selector-1, $selector-2);
+
+
+//funciones del COLOR
+/*
+color.adjust($color,
+    $red: null, $green: null, $blue: null,
+    $hue: null, $saturation: null, $lightness: null,
+    $whiteness: null, $blackness: null,
+    $alpha: null)
+*/
+
+$color: rgb(226,20,255);
+
+
+@debug color.adjust($color, $red: -20, $green: +200, $blue:-100);
+@debug color.adjust($color, $lightness: -30% );
+
+@debug color.complement($color);
+$color-complementario: #31ff14;
+
+@debug darken($color-complementario, 30%);
+$color-darken: #0f7a00;
+
+@debug lighten($color-complementario, 30%);
+$color-lighten: #b7ffad;
+
+$color-2: #cedc9b;
+
+@debug color.red($color-2);
+@debug color.green($color-2);
+@debug color.blue($color-2);

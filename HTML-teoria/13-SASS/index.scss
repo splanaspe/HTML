@@ -1,0 +1,18 @@
+
+// @import "sass/componentes";
+
+// @import "sass/mixins";
+
+// @import "sass/estilos";
+
+@use  "sass/componentes" as comp;
+// $color -> comp.$color la podemos usar en todo el codigo 
+
+@use "sass/mixins" as *;
+// $color -> $color es una variable global
+
+@use "sass/estilos";
+
+@use "sass/builtin";
+
+

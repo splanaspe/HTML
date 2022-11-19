@@ -1,0 +1,13 @@
+SASS
+
+Instalem SASS al projecte 
+
+terminal : npm install -g sass
+
+
+comando per a fer watching en temps real: 
+sass --watch styles.scss styles.css
+
+si no deja ejecutar en windows, escribir en W Power Shell, ejecutandola como admin, el siguiente comando: 
+
+set-executionpolicy unrestricted –force
